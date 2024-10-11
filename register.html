@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Coding Ninjas</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img
+            src="../Multimedia/new_cn_logo.svg"
+            alt="A descriptive caption"
+            width="200"
+          /></a>
+        <h1>Register</h1>
+    </header>
+
+    <section>
+        <form action="/register" method="POST">
+            <fieldset>
+                <legend>Registration Form</legend>
+                
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="userType">User Type:</label><br>
+                <select id="userType" name="userType" required>
+                    <option value="" disabled selected>Select User Type</option>
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="admin">Admin</option>
+                </select><br><br>
+
+                <label for="course">Course:</label><br>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="android-development">Android Development</option>
+                </select><br><br>
+
+                <input type="submit" value="Register">
+            </fieldset>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </section>
+</body>
+</html>
